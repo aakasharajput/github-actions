@@ -1,0 +1,12 @@
+name: CI workflow
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  my-job:
+    name: CI build
+    runs-on: ubuntu-latest
+    steps:
+      - name: print Hello World
+        run: echo "hello World"
